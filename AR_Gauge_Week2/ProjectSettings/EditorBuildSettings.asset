@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/AR_Gauge/Scenes/AR_Mqtt_Gauge_ImgRec.unity
     guid: fa1163911313b7e49a527c3c7787927f
+  - enabled: 1
+    path: Assets/AR_Gauge/Scenes/AR_Mqtt_Gauge_Plane_UI_Buttons.unity
+    guid: 5a211b308cf2cbe469a67ce68defb0e4
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}

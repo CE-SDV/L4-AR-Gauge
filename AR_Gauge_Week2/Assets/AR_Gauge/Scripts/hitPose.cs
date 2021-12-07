@@ -11,6 +11,7 @@ public class hitPose : MonoBehaviour
     private GameObject spawnedObject; //the Prefab Instantiate in the scene. Used internally by the script 
     private ARRaycastManager _arRaycastManager; //part of the ARSession GO
     private Vector2 touchPosition; //XZ position of the user Tap
+    public float adjustHeight = 0.0f;
 
     static List<ARRaycastHit> hits = new List<ARRaycastHit>();
 public Ray ray;
@@ -45,11 +46,11 @@ public Ray ray;
 
                 if (spawnedObject == null)
                 {
-                    spawnedObject = Instantiate(gameObjectToInstantiate, hitPose.position, hitPose.rotation);
+                    spawnedObject = Instantiate(gameObjectToInstantiate, new Vector3(hitPose.position.x,hitPose.position.y+adjustHeight,hitPose.position.z), hitPose.rotation);
                 }
                 else
                 {
-                    spawnedObject.transform.position = hitPose.position;
+                    spawnedObject.transform.position = new Vector3(hitPose.position.x,hitPose.position.y+adjustHeight,hitPose.position.z);
                 }
         }
     }

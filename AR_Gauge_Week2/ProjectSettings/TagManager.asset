@@ -6,6 +6,7 @@ TagManager:
   tags:
   - wind
   - ARObject
+  - mqtt
   layers:
   - Default
   - TransparentFX

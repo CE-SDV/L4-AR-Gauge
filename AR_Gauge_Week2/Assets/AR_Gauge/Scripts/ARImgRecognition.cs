@@ -11,6 +11,7 @@ public class ARImgRecognition : MonoBehaviour
     private List<GameObject> InstatiatedGObject = new List<GameObject>();//Internal List of the GameObjects instantiated
 
     private float timer; //check for how long the marker is out of the camera view
+    
 
     private void Awake()
     {
@@ -29,6 +30,7 @@ public class ARImgRecognition : MonoBehaviour
     private void OnEnable()
     {
         _arTrackedImageManager.trackedImagesChanged += OnImageChanged;
+        
     }
 
     private void OnDisable()

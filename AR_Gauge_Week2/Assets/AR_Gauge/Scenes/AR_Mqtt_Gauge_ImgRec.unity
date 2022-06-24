@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 388525030}
   - component: {fileID: 388525033}
   - component: {fileID: 388525034}
-  - component: {fileID: 388525032}
+  - component: {fileID: 388525035}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -364,23 +364,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &388525032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 388525029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa794a368301aae42abb26ab1a435554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameObjectToSpawn:
-  - {fileID: 3204310608508576585, guid: 42cd9e6dd809d7340832a8844b9635fb, type: 3}
-  - {fileID: 3204310608508576585, guid: 42cd9e6dd809d7340832a8844b9635fb, type: 3}
-  - {fileID: 3204310608508576585, guid: 42cd9e6dd809d7340832a8844b9635fb, type: 3}
-  - {fileID: 3204310608508576585, guid: 42cd9e6dd809d7340832a8844b9635fb, type: 3}
 --- !u!114 &388525033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,6 +393,34 @@ MonoBehaviour:
     type: 2}
   m_MaxNumberOfMovingImages: 10
   m_TrackedImagePrefab: {fileID: 0}
+--- !u!114 &388525035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388525029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c03d8971f3895444a46dfc2c76e2169, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameObjectToSpawn:
+  - {fileID: 3274993845327936549, guid: 97d05be381ae94e498556f501d88dbc0, type: 3}
+  - {fileID: 3274993845327936549, guid: 97d05be381ae94e498556f501d88dbc0, type: 3}
+  - {fileID: 3274993845327936549, guid: 97d05be381ae94e498556f501d88dbc0, type: 3}
+  - {fileID: 3274993845327936549, guid: 97d05be381ae94e498556f501d88dbc0, type: 3}
+  TwoDCutoutToSpawn:
+  - {fileID: 2800000, guid: 48949b0e2e79d33438dcbb037a8949e2, type: 3}
+  - {fileID: 2800000, guid: 975608d967b76b5499b46f852647a797, type: 3}
+  - {fileID: 2800000, guid: ff601a5102d16894e8b1121698922cc0, type: 3}
+  - {fileID: 2800000, guid: 95f59d419b739024bad49c65404f8e57, type: 3}
+  checkTracking: 0
+  topicsToSubscribes:
+  - student/CASA0014/plant/ucfnaka/moisture
+  - student/CASA0014/plant/ucfnwho/moisture
+  - student/CASA0014/plant/ucfnbou/moisture
+  - student/CASA0014/plant/ucfnmz0/moisture
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,19 +753,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1678078178}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb005f753efc97f4b8851def4c240cb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d834fa2639a9164e82b224202bc0199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brokerAddress: 
+  brokerAddress: mqtt.cetools.org
   brokerPort: 1883
   isEncrypted: 0
   certificateName: 
   connectionDelay: 500
   timeoutOnConnection: 30000
-  autoConnect: 1
+  autoConnect: 0
   mqttUserName: 
   mqttPassword: 
-  topicSubscribe: 
+  topicSubscribe: []
   topicPublish: 
   messagePublish: 
   autoTest: 0
